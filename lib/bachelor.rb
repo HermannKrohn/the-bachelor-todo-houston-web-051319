@@ -62,10 +62,10 @@ def get_average_age_for_season(data, season)
   data[season].each do |hash|
     hash.each do |hashKey, hashValue|
       if hashKey == "age"
-        sumOfAges += hashValue.to_i
+        sumOfAges += hashValue.to_f
         numberOfPeople += 1 
       end
     end
   end
-  averageAge = (float)sumOfAges/numberOfPeople
+  averageAge = round(sumOfAges/numberOfPeople)
 end
