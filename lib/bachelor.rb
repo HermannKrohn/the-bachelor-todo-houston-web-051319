@@ -15,8 +15,8 @@ end
 def get_contestant_name(data, occupation)
   # code here
   name = ""
-  data.each do |season|
-    data[season].each do |hash|
+  data.each do |season, array|
+    array.each do |hash|
       hash.each do |hashKey, hashValue|
         if hashValue == occupation
          name = hash["name"]
