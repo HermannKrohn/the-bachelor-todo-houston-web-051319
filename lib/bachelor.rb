@@ -6,7 +6,6 @@ def get_first_name_of_season_winner(data, season)
     hash.each do |hashKey, hashValue|
       if hashValue == "Winner"
         firstName = hash["name"].split(" ").first
-        puts firstName
       end
     end
   end
