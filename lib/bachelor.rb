@@ -4,7 +4,7 @@ def get_first_name_of_season_winner(data, season)
   data[season].each do |arrayElement|
     arrayElement.each do |hashKey, hashValue|
       if hashValue == "Winner"
-        firstName = data[season][arrayElement][]
+        firstName = arrayElement["name"]
 end
 
 def get_contestant_name(data, occupation)
