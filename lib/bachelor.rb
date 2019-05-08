@@ -61,7 +61,7 @@ def get_average_age_for_season(data, season)
   numberOfPeople = 0 
   data[season].each do |hash|
     hash.each do |hashKey, hashValue|
-      if hashValue == "Winner"
+      if hashKey == "age"
         firstName = hash["name"].split(" ").first
       end
     end
