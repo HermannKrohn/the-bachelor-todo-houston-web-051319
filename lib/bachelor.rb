@@ -18,8 +18,8 @@ def get_contestant_name(data, occupation)
   data.each do |season|
     data[season].each do |hash|
       hash.each do |hashKey, hashValue|
-        if hashValue == "Winner"
-         firstName = hash["name"].split(" ").first
+        if hashValue == occupation
+         name = hash["name"]
        end
       end
     end
