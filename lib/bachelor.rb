@@ -63,6 +63,7 @@ def get_average_age_for_season(data, season)
     hash.each do |hashKey, hashValue|
       if hashKey == "age"
         sumOfAges += hashValue
+        numberOfPeople += 1 
       end
     end
   end
